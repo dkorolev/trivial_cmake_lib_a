@@ -1,0 +1,5 @@
+{
+  "import": {
+    "trivial_cmake_lib": "https://github.com/dkorolev/trivial_cmake_lib"
+  }
+}
