@@ -7,6 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_subdirectory(trivial_cmake_lib)
 
+# This is for `#include "pls.h"` to work.
+include_directories("${CMAKE_SOURCE_DIR}/.pls/pls_h_dir/")
+
 add_library(trivial_cmake_lib_a src/trivial_cmake_lib_a.cc)
 target_link_libraries(trivial_cmake_lib_a trivial_cmake_lib)
 target_include_directories(trivial_cmake_lib_a PUBLIC ${PROJECT_SOURCE_DIR}/src)
